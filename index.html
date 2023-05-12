@@ -39,7 +39,7 @@
         <div class="card-body">
           <h5 class="card-title">Orange</h5>
           <p class="card-text">Price: $0.5</p>
-          <a href="#" class="btn btn-primary">Add to cart</a>
+          <a href="#" class="btn btn-primary add-to-cart">Add to cart</a>
         </div>
       </div>
       <div class="card" style="width: 18rem">
@@ -47,7 +47,7 @@
         <div class="card-body">
           <h5 class="card-title">Banana</h5>
           <p class="card-text">Price: $1.22</p>
-          <a href="#" class="btn btn-primary">Add to cart</a>
+          <a href="#" class="btn btn-primary add-to-cart">Add to cart</a>
         </div>
       </div>
       <div class="card" style="width: 18rem">
@@ -55,7 +55,7 @@
         <div class="card-body">
           <h5 class="card-title">Lemon</h5>
           <p class="card-text">Price: $5</p>
-          <a href="#" class="btn btn-primary">Add to cart</a>
+          <a href="#" class="btn btn-primary add-to-cart">Add to cart</a>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
           <button
             type="button"
             class="btn-close"
@@ -80,7 +80,38 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body">...</div>
+        <!-- <div class="button__container__checkout">
+          <button type="button" class="btn btn-danger btn-md">X</button>
+        </div> -->
+        <div class="modal-body">
+          <div class="input-group mb-3 d-flex flex-row justify-content-between">
+            <div class="input-group-prepend">
+              <span>Item name</span>
+              <button
+                class="btn btn-outline-secondary btn-decrement"
+                type="button"
+              >
+                -
+              </button>
+            </div>
+            <input
+              type="number"
+              class="form-control"
+              placeholder=""
+              aria-label=""
+              aria-describedby="basic-addon1"
+              value="0"
+            />
+            <button
+              class="btn btn-outline-secondary btn-increment"
+              type="button"
+            >
+              +
+            </button>
+            <button class="btn btn-danger">X</button>
+            <span>Item Price</span>
+          </div>
+        </div>
         <div class="modal-footer">
           <button
             type="button"
@@ -89,7 +120,7 @@
           >
             Close
           </button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Order now</button>
         </div>
       </div>
     </div>
