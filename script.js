@@ -15,20 +15,18 @@ decrementBtn.addEventListener("click", () => {
   itemQuatity.value--;
 });
 
-function createInputContainer() {
-  modalBody.innerHTML += `
+function createInputContainer(itemName, itemPrice) {
+  modalBody.innerHTML = `
       <div class="input-group mb-3 d-flex flex-row justify-content-between">
         <div class="input-group-prepend">
-          <span class="item-name">Item name</span>
+          <span class="item-name">${itemName}</span>
           <button class="btn btn-outline-secondary btn-decrement" type="button">-</button>
         </div>
         <input type="number" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" value="0">
         <button class="btn btn-outline-secondary btn-increment" type="button">+</button>
         <button class="btn btn-danger">X</button>
-        <span class="item-price">Item Price</span>
+        <span class="item-price">${itemPrice}</span>
       </div>
     `;
 }
-
-createInputContainer();
-createInputContainer();
+createInputContainer("Orange", " 0.5");
